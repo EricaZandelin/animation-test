@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/foggy-forest-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200vh;
+}
+
+
+.intro__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+li {
+    font-family: 'Balsamiq Sans', cursive;
+    
+}
+
+button {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn__head {
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+.btn__head:hover {
+    color: green;
+    transition: 1s;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    max-width: 7%;
+}
+
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links > li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links > li > a {
+    color: black;
+}
+
+
+.nav__links > li > a:hover {
+    color:green;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+/*Navbar ends here*/ 
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.intro__text{
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+.p__box{
+    color: white;
+    margin:50px;
+}
+
+.btn__box {
+    margin-bottom: 20px;
+    color:black;
+    background-color: rgb(75, 145, 75);
+}
+
+.btn__box:hover {
+    color: white;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+    cursor:pointer;
+}
+
+.lionfly {
+    max-width: 70%;
+}
+
+.maggie {
+    max-width: 35%;
+}
+
+.naked {
+    max-width: 45%;
+}
+ 
+/*
+.naked, .maggie, .lionfly {
+    animation: imgZoom 3.5s ease infinite;
+}
+
+.naked:hover, .maggie:hover, .lionfly:hover {
+    -webkit-animation-play-state: paused;
+}
+
+@keyframes imgZoom {
+    0% {transform: scale(1) rotate(0deg);}
+    50% {transform: scale(1.1) rotate(15deg);}
+    100% {transform: scale(1) rotate(0deg);}
+}*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin:20px
+}
+
+
+/*Vet tyvärr ej färg på träd eller dimma, hade använt mig av den färgen annars*/
+@keyframes pulse {
+    0% {
+        background-color: black;
+        }
+    100% {
+        background-color: rgb(177, 196, 183);
+        }
+}
+
+.first__card {
+    background-color:black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding:10px;
+    animation: pulse 5s infinite;
+}
+
+
+.second__card{
+    background-color:black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    padding:10px;
+    animation: pulse 5s infinite;
+}
+
+.third__card {
+    background-color:black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    padding:10px;
+    animation: pulse 5s infinite;
+}
